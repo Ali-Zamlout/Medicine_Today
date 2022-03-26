@@ -1,8 +1,17 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body style="margin:0px;padding:0px;overflow:hidden">
-    <iframe src="https://script.google.com/macros/s/AKfycbyZcfOA4fr6j55bCHGojMgXAyZn6N_2oxQePhJ4hVW0ve2ceMVaPAzygvIJbxrAMkL7mw/exec" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-</body>
+    <head>
+        <Title>Medicine Today</Title>
+        <meta>
+    </head>
+
+    <body style="margin:0px;padding:0px;overflow:hidden">
+        <iframe id="Frame" height="100%" width="100%" frameborder="0" style="overflow:hidden;height:100%;width:100%">
+        </iframe>
+    </body>
+
+    <script>
+        var par = window.location.search;
+        document.getElementById("Frame").src = 'https://script.google.com/macros/s/AKfycbyZcfOA4fr6j55bCHGojMgXAyZn6N_2oxQePhJ4hVW0ve2ceMVaPAzygvIJbxrAMkL7mw/exec' + par
+    </script>
 </html>
